@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"net/http"
 	"time"
-	"xiaoice-beauty/model"
+	"github.com/icepie/xiaoice-beauty/model"
 )
 
 // AnalyzeImg 分析颜值

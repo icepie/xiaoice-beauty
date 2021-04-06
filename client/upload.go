@@ -6,7 +6,7 @@ import (
 	"io/ioutil"
 	"net/http"
 	"strings"
-	"xiaoice-beauty/model"
+	"github.com/icepie/xiaoice-beauty/model"
 )
 
 // UploadImg 通过 base64 上传图片

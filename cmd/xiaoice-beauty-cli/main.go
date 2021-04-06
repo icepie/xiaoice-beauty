@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"xiaoice-beauty/client"
+	"github.com/icepie/xiaoice-beauty/client"
 )
 
 func main() {
