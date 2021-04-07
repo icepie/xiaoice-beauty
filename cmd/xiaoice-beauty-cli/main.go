@@ -31,7 +31,7 @@ func printResult(rte model.AnalyzeImgRte) {
 	fmt.Printf(`
 ## 鉴定结果
 
-	- 得分: %2.f
+	- 得分: %.1f
 
 	- 简述: %s
 
@@ -49,11 +49,11 @@ func printResult(rte model.AnalyzeImgRte) {
 
 ## 评分细则
 
-	- %s: %2.f
+	- %s: %.1f
 	
-	- %s: %2.f
+	- %s: %.1f
 
-	- %s: %2.f
+	- %s: %.1f
 
 `, rte.Content.Metadata.Score, rte.Content.Text, rte.Content.Metadata.Reportimgurl, rte.Content.Metadata.Gender, rte.Content.Metadata.Isceleb, rte.Content.Metadata.Isemoji, rte.Content.Metadata.FacePoints, rte.Content.Metadata.FbrKey0, rte.Content.Metadata.FbrScore0, rte.Content.Metadata.FbrKey1, rte.Content.Metadata.FbrScore1, rte.Content.Metadata.FbrKey2, rte.Content.Metadata.FbrScore2)
 }
