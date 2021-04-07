@@ -53,7 +53,11 @@ func main() {
 $ go install github.com/icepie/xiaoice-beauty/cmd/xiaoice-beauty-cli
 ```
 
-### 调用
+### 使用
+
+> 注意将 `GOPTAH` 添加到环境变量
+
+#### 帮助
 
 ```bash
 $ xiaoice-beauty-cli -h
@@ -73,3 +77,38 @@ options:
 
 ```
 
+#### 范例
+
+> 那我就拿自己的照片鉴定一下颜值吧 (逃
+
+```bash
+
+$ xiaoice-beauty-cli -f me.png
+
+## 鉴定结果
+
+        - 得分:  9
+
+        - 简述: 要是谁能有吴彦祖这样的男朋友，做梦都会笑醒吧？（从网络上收集到的吴彦祖照片统计显示，吴彦祖的颜值均值在9.3分上下）
+
+        - 分析图: https://mediaplatform.xiaoice.com/image/fetchimage?key=******
+
+## 人物信息
+
+        - 性别: male
+
+        - 是否为名人: True
+
+        - 是否为表情包: False
+
+        - 面部像素区域: [[(99, 85), (211, 85), (99, 197), (211, 197)]]
+
+## 评分细则
+
+        - 韩国90后女性:  9
+
+        - 法国90后女性:  9
+
+        - 法国90后男性:  8
+
+```
