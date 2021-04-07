@@ -20,7 +20,7 @@ import (
 )
 
 func main() {
-    // 声明对象
+	// 声明对象
 	ib, err := client.New()
 	if err != nil {
 		fmt.Println("error: ", err)
@@ -34,7 +34,7 @@ func main() {
 
 	fmt.Println("rte: ", rte)
     
-    // 从图片文件分析
+	// 从图片文件分析
 	rte, err = ib.AnalyzeImgByFile("./a.png")
 	if err != nil {
 		fmt.Println("error: ", err)
